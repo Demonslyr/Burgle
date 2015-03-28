@@ -1,12 +1,12 @@
 var Game = {}
-/*var x = 0.0;
+var x = 0.0;
 var y =0;
 var running = false;
 var len;
 var map_itr=0;
 var restarted=true;
 var ygrowth;
-var inc=false;*/
+var inc=false;
 Game.initialize = function(){
 /*player.alive=true;
 gamemap.initialize();

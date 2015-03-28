@@ -1,7 +1,7 @@
 var canvas = document.createElement("canvas");
 var context = canvas.getContext("2d");
-var game_height = 600;
-var game_width = 800;
+var game_height = 960;
+var game_width = 1020;
 canvas.width = game_width;
 canvas.height = game_height;/*Change this to ->window.innerHeight;<- and modify the menu seciton to fit around it*/
 document.body.appendChild(canvas);

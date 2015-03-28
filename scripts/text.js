@@ -35,7 +35,7 @@ text.death = function(){
 text.main_menu = function(){
 	  context.font = 'bold 80pt Calibri';
 	  context.fillStyle = 'black';
-      context.fillText("JSho!", (canvas.width/2)-120,(canvas.height/2)-120);
+      context.fillText("BURGLE", (canvas.width/2)-120,(canvas.height/2)-120);
 	  	  context.font = 'bold 35pt Calibri';
 	  context.fillStyle = 'black';
       context.fillText("Start", (canvas.width/2)-52,(canvas.height/2)-60);
@@ -46,14 +46,7 @@ text.main_menu = function(){
 text.credits = function(){
 		////maybe store the credits lines in a list of strings and 
 		////make them scroll/come to life like the rectangle clouds
-	  context.font = 'bold 80pt Calibri';
-	  context.fillStyle = 'black';
-      context.fillText("JSho!", (canvas.width/2)-120,(canvas.height/2)-120);
-	  	  context.font = 'bold 35pt Calibri';
-	  context.fillStyle = 'black';
-      context.fillText("Start", (canvas.width/2)-52,(canvas.height/2)-60);
-	  context.fillText("Quit", (canvas.width/2)-45,(canvas.height/2)-10);
-
+	  
 }
 
 

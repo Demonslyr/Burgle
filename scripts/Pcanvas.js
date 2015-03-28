@@ -256,7 +256,7 @@ down=false;
 }, false);
 
 document.addEventListener('keydown', function(e){ 
-if (e.which ==27){//escape
+if (e.which ==27){/*escape*/
 if(credits){	credits=false;
 	initialized = false;
 	credit_tunes.pause();
@@ -268,7 +268,7 @@ else if(paused&&Game.running&&player.alive==true){paused = false;
 game_tunes.play();} 
 }
 
-else if(e.which ==13/){if(credits){	credits=false;//enter
+else if(e.which ==13/){if(credits){	credits=false;/*enter*/
 	credit_tunes.pause();
 	menu_tunes.currentTime = 0;
 	menu_tunes.play();}} 

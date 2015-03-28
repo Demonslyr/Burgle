@@ -178,12 +178,17 @@ menu.update = function(){
 					z=0;
 					q=2400;
 					//menu.credits();
+					credits=false;
+	
+					initialized = false;
 					}
 				}
 			}
 			else if(credits){
 			
 			//menu.credits();	
+			credits=false;
+			initialized = false;
 			//console.log(credits);			
 			}
 		}

@@ -255,7 +255,7 @@ document.addEventListener('mouseup', function(e){
 down=false;
 }, false);
 
-document.addEventListener('keydown', function(e){ /*
+document.addEventListener('keydown', function(e){ 
 if (e.which ==27){//escape
 if(credits){	credits=false;
 	initialized = false;
@@ -272,11 +272,7 @@ else if(e.which ==13/){if(credits){	credits=false;//enter
 	credit_tunes.pause();
 	menu_tunes.currentTime = 0;
 	menu_tunes.play();}} 
-*/	
-//else if(e.which ==37/*left arrow*/){}
-//else if(e.which ==38/*up arrow*/){}
-//else if(e.which ==39/*right arrow*/){}
-//else if(e.which ==40/*down arrow*/){}
+
 }, false);
 
 

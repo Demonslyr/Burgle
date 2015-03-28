@@ -35,7 +35,7 @@ text.death = function(){
 text.main_menu = function(){
 	  context.font = 'bold 80pt Calibri';
 	  context.fillStyle = 'black';
-      context.fillText("BURGLE", (canvas.width/2)-120,(canvas.height/2)-120);
+      context.fillText("BURGLE", (canvas.width/2)-177,(canvas.height/2)-120);
 	  	  context.font = 'bold 35pt Calibri';
 	  context.fillStyle = 'black';
       context.fillText("Start", (canvas.width/2)-52,(canvas.height/2)-60);

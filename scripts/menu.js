@@ -81,13 +81,13 @@ menu.update = function(){
 			if(paused&&x<610&&x>410&&y<425&y>375&&down){
 				paused = false;
 				
-				//game_tunes.play();
+				game_tunes.play();
 				}
 			if(paused&&x<610&&x>410&&y<475&y>425&&down){ 
 				paused = true;
 				main_menu=true;
 				initialized=false;
-				//score=0;
+				score=0;
 				//game_tunes.currentTime = 0;
 				//menu_tunes.currentTime = 0;
 				menu.reset=true;
@@ -238,8 +238,8 @@ menu.death = function(x,y){
 		//paused = false;
 		player.res();
 		Game.running = true;
-		//score=0;
-		//eFreq =120;
+		score=0;
+		eFreq =120;
 		Game.initialize();
 		Game.run();
 		//game_tunes.currentTime = 0;
@@ -336,5 +336,6 @@ var lft_mgn=(290);
 	//credit_tunes.pause();
 	initialized = false;
 	//menu_tunes.currentTime = 0;
-	//menu_tunes.play();}
+	//menu_tunes.play();
+	}
 }

@@ -86,7 +86,6 @@ var credit_tunes =document.getElementById('credits');
 var boss=0;
 var posx = 0;
 var posy = 0 ;
-var mouse = {x: 0, y: 0};
 var down = false
 var bcounter = 0;
 var Ecounter = 0;
@@ -103,10 +102,10 @@ var paused = false;
 var Eblimit =0;
 var health= 100;
 var shield=50;
-var score=0;
 var eFreq =120;
 */
-
+var score=0;
+var mouse = {x: 0, y: 0};
 //var channel_max = 30;// number of channels
 
 
@@ -242,11 +241,11 @@ function createArray(length) {
 }
 
 document.addEventListener('mousemove', function(e){ 
-/*
+
     var rect = canvas.getBoundingClientRect();
     mouse.x = e.clientX - rect.left;
     mouse.y = e.clientY - rect.top; 
-	//if(paused){menu.update();} */
+	//if(paused){menu.update();} 
 }, false);
 
 document.addEventListener('mousedown', function(e){ /*

@@ -1,4 +1,4 @@
-var Game = {};
+var Game = {}
 /*var x = 0.0;
 var y =0;
 var running = false;

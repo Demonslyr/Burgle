@@ -81,15 +81,15 @@ menu.update = function(){
 			if(paused&&x<610&&x>410&&y<425&y>375&&down){
 				paused = false;
 				
-				game_tunes.play();
+				//game_tunes.play();
 				}
 			if(paused&&x<610&&x>410&&y<475&y>425&&down){ 
 				paused = true;
 				main_menu=true;
 				initialized=false;
-				score=0;
-				game_tunes.currentTime = 0;
-				menu_tunes.currentTime = 0;
+				//score=0;
+				//game_tunes.currentTime = 0;
+				//menu_tunes.currentTime = 0;
 				menu.reset=true;
 				wait=0;
 				menu.start();
@@ -107,11 +107,12 @@ menu.update = function(){
 		////////////////////
 		if(!credits){
 			menu.map();		
-			if(menu_tunes.currentTime*1000>240000){
+			/*if(menu_tunes.currentTime*1000>240000){
 				menu_tunes.pause();
 				menu_tunes.currentTime = 0;
 				menu_tunes.play();
 				}
+				*/
 			context.beginPath();
 			context.globalAlpha = 0.7;
 			context.fillStyle = "black";
@@ -169,9 +170,9 @@ menu.update = function(){
 			if(main_menu&&x<610&&x>410&&y<525&y>475&&down){
 				//console.log("I tried to quit", wait);
 				if (wait>60){
-					menu_tunes.pause();
-					credit_tunes.currentTime = 0;
-					credit_tunes.play();
+					//menu_tunes.pause();
+					//credit_tunes.currentTime = 0;
+					//credit_tunes.play();
 					credits=true;
 					i=2400;
 					z=0;
@@ -237,19 +238,19 @@ menu.death = function(x,y){
 		//paused = false;
 		player.res();
 		Game.running = true;
-		score=0;
-		eFreq =120;
+		//score=0;
+		//eFreq =120;
 		Game.initialize();
 		Game.run();
-		game_tunes.currentTime = 0;
-		game_tunes.play();
+		//game_tunes.currentTime = 0;
+		//game_tunes.play();
 		}
 	if(paused&&!player.alive&&x<610&&x>410&&y<475&y>425&&down){ 
 		
 		paused = true;
 		main_menu=true;
 		initialized=false;
-		menu_tunes.currentTime = 0;
+		//menu_tunes.currentTime = 0;
 		menu.reset=true;
 		wait=0;
 		menu.start();
@@ -332,8 +333,8 @@ var lft_mgn=(290);
 	context.globalAlpha = 1;
 	if(q<(-1650)){
 	credits=false;
-	credit_tunes.pause();
+	//credit_tunes.pause();
 	initialized = false;
-	menu_tunes.currentTime = 0;
-	menu_tunes.play();}
+	//menu_tunes.currentTime = 0;
+	//menu_tunes.play();}
 }

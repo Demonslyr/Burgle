@@ -81,7 +81,7 @@ menu.update = function(){
 			if(paused&&x<610&&x>410&&y<425&y>375&&down){
 				paused = false;
 				
-				game_tunes.play();
+				//game_tunes.play();
 				}
 			if(paused&&x<610&&x>410&&y<475&y>425&&down){ 
 				paused = true;
@@ -177,13 +177,13 @@ menu.update = function(){
 					i=2400;
 					z=0;
 					q=2400;
-					menu.credits();
+					//menu.credits();
 					}
 				}
 			}
 			else if(credits){
 			
-			menu.credits();	
+			//menu.credits();	
 			//console.log(credits);			
 			}
 		}
@@ -236,12 +236,12 @@ menu.death = function(x,y){
 		}
 	if(paused&&!player.alive&&x<610&&x>410&&y<425&y>375&&down){
 		//paused = false;
-		player.res();
-		Game.running = true;
+		//player.res();
+		//Game.running = true;
 		score=0;
-		eFreq =120;
-		Game.initialize();
-		Game.run();
+		//eFreq =120;
+		//Game.initialize();
+		//Game.run();
 		//game_tunes.currentTime = 0;
 		//game_tunes.play();
 		}

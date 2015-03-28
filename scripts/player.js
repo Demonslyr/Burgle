@@ -1,9 +1,9 @@
 var player = {}
-/*
+
 var xpos=0;
 var ypos=0;
 var alive=true;
-*/
+
 player.draw=function(){
 ////this modified player draw function limits the player's ship to being drawin only inside the canvas
 /*var x = mouse.x;

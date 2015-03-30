@@ -16,7 +16,36 @@ player.res= function(){
 	//shield=50;*/
 }
 
+player.move= function(x){
+	switch (x) {
+		case "right":
+			if(xpos<=canvas.width-6){
+			xpos += 5; 
+			}
+			break;
+			
+		case "left":
+			if(xpos>=6){
+			xpos -= 5;
+			}
+			break;
+			
+		case "up":
+			if(ypos>=6){
+			ypos -= 5;
+			}
+			break;
+		
+		case "down":
+			if(ypos<=canvas.height-6){
+			ypos += 5;
+			}
+			break;
+		
+	}
 
+
+}
 ////////////////////////////////////////////////////////////
 //Make a function that recieves an X and a y direction.
 //makes sure the player can go there (it's not outside the boundary of the screen)

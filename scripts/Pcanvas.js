@@ -278,10 +278,10 @@ else if(e.which ==13){if(credits){	credits=false;/*enter*/
 	//menu_tunes.play();
 	}} 
 else if(e.which == 32)/*Space Bar*/{}
-else if((e.which == 37) || (e.which == 65))/*left arrow/A*/{}
-else if((e.which == 38) || (e.which == 87))/*up arrow/W*/{}
-else if((e.which == 39) || (e.which == 68))/*right arrow/D*/{}
-else if((e.which == 40) || (e.which == 83))/*down arrow/S*/{}
+else if((e.which == 37) || (e.which == 65))/*left arrow/A*/{player.move("left");}
+else if((e.which == 38) || (e.which == 87))/*up arrow/W*/{player.move("up");}
+else if((e.which == 39) || (e.which == 68))/*right arrow/D*/{player.move("right");}
+else if((e.which == 40) || (e.which == 83))/*down arrow/S*/{player.move("down"");}
 }, false);
 
 

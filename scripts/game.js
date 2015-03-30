@@ -12,19 +12,19 @@ player.res()
 //gamemap.initialize();
 score=0;
 health=100;
-shield=50;
-boss=0;
+//shield=50;
+//boss=0;
 x = 0.0;
 y =0;
-ygrowth=5;
+//ygrowth=5;
 running = false;
-len;
-map_itr=0;
-this.proj = [];//array to contain player projectiles
-this.pup = [];//array to contain powerups
-this.Eproj = [];//array to contain the enemy projectiles
+//len;
+//map_itr=0;
+//this.proj = [];//array to contain player projectiles
+//this.pup = [];//array to contain powerups
+//this.Eproj = [];//array to contain the enemy projectiles
 this.target = [];//array to contain the enemies
-this.level = [level1,level2,level3,level4];//array of map assets
+//this.level = [level1,level2,level3,level4];//array of map assets
 /*
 for(var i=0; i< 512; i++){
 this.Eproj[i]=new bullet();
@@ -132,12 +132,12 @@ this.pup[i].update();
 }
 
 
-Game.run = function() {/*
+Game.run = function() {
 if (!paused&&!main_menu){
-
+	console.log("Tryin to update and draw");
   Game.update();}
   Game.draw();
-  */
+  
 };
 //The funciton below spawns a power up and is called upon enemy death. Parameters are the enemy's x and y
 Game.addPup = function(x,y){
@@ -183,18 +183,23 @@ Game.mapdraw = function(){/*
 Game.draw = function(){/*
 ////Note: for fun, maybe I'll draw all the enemy projectiles under the clouds instead of over them...
 	Game.mapdraw();
+	
 	if(!main_menu){
 		len=this.proj.length;
 		for(var i=0; i< len; i++){
 			this.proj[i].draw();
 			}
 		}
+	*/
 	if (!paused){
 		if(!main_menu){
+			console.log("Gonna draw the player");
 			player.draw();
 			}
 		}
-		else{player.drawpaused();}
+		else{//player.drawpaused();
+		}
+	/*
 	gamemap.draw();
 	if(!main_menu){
 	  //The loop below handles drawing the enemy projectiles

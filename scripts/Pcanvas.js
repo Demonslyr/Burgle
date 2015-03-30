@@ -48,7 +48,7 @@ fShot.src = "art/projectile.png";
 var PUp_proj = new Image();
 PUp_proj.src = "assets/art/P_Up_Proj.png";
 var EShot_0 = new Image();
-EShot_0.src = "assets/art/Eprojectile.png";
+EShot_0.src = "assets/art/Eprojectile_2.png";
 /*var EShot_1 = new Image();
 EShot_1.src = "art/Eprojectile_2.png";
 */
@@ -281,7 +281,7 @@ else if(e.which == 32)/*Space Bar*/{}
 else if((e.which == 37) || (e.which == 65))/*left arrow/A*/{player.move("left");}
 else if((e.which == 38) || (e.which == 87))/*up arrow/W*/{player.move("up");}
 else if((e.which == 39) || (e.which == 68))/*right arrow/D*/{player.move("right");}
-else if((e.which == 40) || (e.which == 83))/*down arrow/S*/{player.move("down"");}
+else if((e.which == 40) || (e.which == 83))/*down arrow/S*/{player.move("down");}
 }, false);
 
 

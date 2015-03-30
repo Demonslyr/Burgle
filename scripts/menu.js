@@ -19,6 +19,7 @@ menu.start = function(){
 	if(!initialized){
 		Game.initialize();
 		initialized=true;
+		Game.running = true;
 		}
 	//this is the main menu
 	//new game, exit, credits
@@ -26,10 +27,10 @@ menu.start = function(){
 	/////////////there will be a condition around this game start and so long as its conditionals aren't met it will stay in the main menu
 	if(!main_menu){
 		//main_menu=false;
-		//Game.running = true;
+		console.log("I'm in the menu game loop");
 		//Game.initialize();
-		//Game.run();
-		main_menu = true; //REMOVE THIS LINE AT SOME POINT
+		Game.run();
+		//main_menu = true; //REMOVE THIS LINE AT SOME POINT
 		}
 	else{
 		menu.update();

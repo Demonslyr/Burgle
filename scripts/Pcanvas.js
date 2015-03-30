@@ -3,7 +3,7 @@ var context = canvas.getContext("2d");
 var game_height = 960;
 var game_width = 1020;
 canvas.width = game_width;
-canvas.height = game_height;/*Change this to ->window.innerHeight;<- and modify the menu seciton to fit around it*/
+canvas.height = game_height;/*Change this to ->window.innerHeight;<- and modify the menu section to fit around it*/
 document.body.appendChild(canvas);
 // Background image
 //var bgReady = false;
@@ -29,10 +29,10 @@ level4.src = "art/map4.png";
 //Load the ship art
 ///////////////////////////////////////////////////////////
 
-/*
+
 var pShip = new Image();
-pShip.src = "art/player_ship.png";
-var eShip = new Image();
+pShip.src = "assets/art/player_ship.png";
+/*var eShip = new Image();
 eShip.src = "art/enemy_ship.png";
 var mb_Ship_0 = new Image();
 mb_Ship_0.src = "art/enemy_ship_mb0.png";
@@ -41,14 +41,15 @@ mb_Ship_0.src = "art/enemy_ship_mb0.png";
 ///////////////////////////////////////////////////////////
 //Load the projectile art
 ///////////////////////////////////////////////////////////
-/*
-var fShot = new Image();
+
+/*var fShot = new Image();
 fShot.src = "art/projectile.png";
+*/
 var PUp_proj = new Image();
-PUp_proj.src = "art/P_Up_Proj.png";
+PUp_proj.src = "assets/art/P_Up_Proj.png";
 var EShot_0 = new Image();
-EShot_0.src = "art/Eprojectile.png";
-var EShot_1 = new Image();
+EShot_0.src = "assets/art/Eprojectile.png";
+/*var EShot_1 = new Image();
 EShot_1.src = "art/Eprojectile_2.png";
 */
 ///////////////////////////////////////////////////////////

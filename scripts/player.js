@@ -16,6 +16,14 @@ player.res= function(){
 	//shield=50;*/
 }
 
+
+////////////////////////////////////////////////////////////
+//Make a function that recieves an X and a y direction.
+//makes sure the player can go there (it's not outside the boundary of the screen)
+//updates the player position
+///////////////////////////////////////////////////////////
+
+
 player.shield_draw=function(){
 	/*context.globalAlpha = shield_tick/20;
 	context.drawImage(shield_dmg,player.xpos-40, player.ypos-50, 80, 70);

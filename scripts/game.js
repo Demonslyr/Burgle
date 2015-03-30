@@ -9,7 +9,7 @@ var ygrowth;
 var inc=false;
 Game.initialize = function(){
 player.res()
-gamemap.initialize();
+//gamemap.initialize();
 score=0;
 health=100;
 shield=50;
@@ -25,22 +25,23 @@ this.pup = [];//array to contain powerups
 this.Eproj = [];//array to contain the enemy projectiles
 this.target = [];//array to contain the enemies
 this.level = [level1,level2,level3,level4];//array of map assets
+/*
 for(var i=0; i< 512; i++){
 this.Eproj[i]=new bullet();
 }
 for(var i=0; i< 150; i++){
 this.proj[i]=new bullet();
 }
-///The code below is supposed to have the pwoerup object in it but powerup is not working
-
+//The code below is supposed to have the pwoerup object in it but powerup is not working
+/*
 for(var i=0; i< 64; i++){
 this.pup[i] = new Pup();
 }
-
+*/
 for(var i=0; i< 32; i++){
 this.target[i]=new enemy();
 }
-
+/*
 //////////////////////TEST CODE//////////////////////
 if(main_menu){
 	menu_tunes.play();}

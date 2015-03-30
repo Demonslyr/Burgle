@@ -26,9 +26,10 @@ menu.start = function(){
 	/////////////there will be a condition around this game start and so long as its conditionals aren't met it will stay in the main menu
 	if(!main_menu){
 		//main_menu=false;
-		Game.running = true;
+		//Game.running = true;
 		//Game.initialize();
-		Game.run();
+		//Game.run();
+		main_menu = true; //REMOVE THIS LINE AT SOME POINT
 		}
 	else{
 		menu.update();

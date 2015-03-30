@@ -259,19 +259,23 @@ document.addEventListener('keydown', function(e){
 if (e.which ==27){/*escape*/
 if(credits){	credits=false;
 	initialized = false;
-	credit_tunes.pause();
-	menu_tunes.currentTime = 0;
-	menu_tunes.play();}
+	//credit_tunes.pause();
+	//menu_tunes.currentTime = 0;
+	//menu_tunes.play();
+	}
 else if(!paused&&Game.running&&player.alive==true){paused = true;
-game_tunes.pause();}
+//game_tunes.pause();
+}
 else if(paused&&Game.running&&player.alive==true){paused = false;
-game_tunes.play();} 
+//game_tunes.play();
+} 
 }
 
-else if(e.which ==13/){if(credits){	credits=false;/*enter*/
-	credit_tunes.pause();
-	menu_tunes.currentTime = 0;
-	menu_tunes.play();}} 
+else if(e.which ==13){if(credits){	credits=false;/*enter*/
+	//credit_tunes.pause();
+	//menu_tunes.currentTime = 0;
+	//menu_tunes.play();
+	}} 
 else if(e.which == 32)/*Space Bar*/{}
 else if((e.which == 37) || (e.which == 65))/*left arrow/A*/{}
 else if((e.which == 38) || (e.which == 87))/*up arrow/W*/{}

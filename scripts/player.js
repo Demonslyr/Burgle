@@ -1,31 +1,19 @@
 var player = {}
 
-var xpos=0;
-var ypos=0;
+var xpos=60;
+var ypos=60;
 var alive=false;
 
 player.draw=function(){
-////this modified player draw function limits the player's ship to being drawin only inside the canvas
-/*var x = mouse.x;
-var y = mouse.y;
-if(x<canvas.width-15&&x>15){player.xpos=x;}
-else if(x>canvas.width-15){player.xpos=canvas.width-15;}
-else if(x<15){player.xpos=15;}
-
-if(y<canvas.height-30&&y>30){player.ypos=y;}
-else if(y>canvas.height-30){player.ypos=canvas.height-30;}
-else if(y<30){player.ypos=30;}
-
 context.drawImage(pShip,player.xpos-30, player.ypos-30, 60, 60);
-*/
 }
 
 player.res= function(){
-	/*xpos=0;
-	ypos=0;
+	xpos=60;//
+	ypos=60;
 	alive=true;
 	health= 100;
-	shield=50;*/
+	//shield=50;*/
 }
 
 player.shield_draw=function(){

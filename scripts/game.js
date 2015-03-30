@@ -8,7 +8,7 @@ var restarted=true;
 var ygrowth;
 var inc=false;
 Game.initialize = function(){
-/*player.alive=true;
+player.res()
 gamemap.initialize();
 score=0;
 health=100;
